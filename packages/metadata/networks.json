@@ -137,9 +137,7 @@
             "name": "auto-wrap-v1-optimism-sepolia",
             "hostedEndpoint": "https://subgraph-endpoints.superfluid.dev/optimism-sepolia/auto-wrap"
         },
-        "publicRPCs": [
-            "https://sepolia.optimism.io"
-        ],
+        "publicRPCs": ["https://sepolia.optimism.io"],
         "trustedForwarders": []
     },
     {
@@ -207,9 +205,7 @@
         "subgraphV1": {
             "cliName": "base-sepolia"
         },
-        "publicRPCs": [
-            "https://sepolia.base.org"
-        ]
+        "publicRPCs": ["https://sepolia.base.org"]
     },
     {
         "name": "xdai-mainnet",
@@ -808,7 +804,39 @@
             "cliName": "degen",
             "name": "protocol-v1-degenchain",
             "hostedEndpoint": "https://subgraph-endpoints.superfluid.dev/degenchain/protocol-v1"
-	    },
+        },
         "publicRPCs": ["https://rpc.degen.tips"]
+    },
+    {
+        "name": "mega-testnet-v2",
+        "isTestnet": true,
+        "networkId": 6343,
+        "chainId": 6343,
+        "sfId": 6343,
+        "shortName": "mega-testnet-v2",
+        "uppercaseName": "MEGA_TESTNET_V2",
+        "humanReadableName": "Mega Testnet V2",
+        "nativeTokenSymbol": "ETH",
+        "nativeTokenWrapper": "0x052e7132Ee289aFF557f22a18B8f0833CdC9bC62",
+
+        "contractsV1": {
+            "resolver": "0x42De42E7D35F444B2DC61f4eB8BF0431494E3a52",
+            "host": "0xF92B4e57f89A3aeBc63f7e0Fd9c676ec67b4aE7E",
+            "cfaV1": "0x9aF639c72CbB120921373F8Ba1b041D726724159",
+            "gdaV1": "0xE6BE333ef695cc8e830F96f30F1C2E85766721D3",
+            "idaV1": "0x48801AF5454828b078BEA31B0a2ac8D63d31e62f",
+            "superTokenFactory": "0xC1033967aE933b41388F4a784eA0496741165D7D",
+            "superfluidLoader": "0xd0E43041C980af6131302DC7d30Db10a5504fBa5",
+            "batchLiquidator": "0x6048Cc05D4703E51d5273093aC6c372A41323A66"
+        },
+
+        "startBlockV1": 3717775,
+        "logsQueryRange": 2000,
+
+        "explorer": "https://megaeth-testnet-v2.blockscout.com",
+
+        "publicRPCs": ["https://carrot.megaeth.com/rpc"],
+
+        "trustedForwarders": []
     }
 ]
