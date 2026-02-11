@@ -836,6 +836,10 @@ module.exports =
         "logsQueryRange": 2000,
 
         "explorer": "https://megaeth-testnet-v2.blockscout.com",
+        "subgraphV1": {
+            "cliName": "megaeth-testnet-v2",
+            "name": "protocol-v1-mega-testnet"
+        },
 
         "publicRPCs": ["https://carrot.megaeth.com/rpc"],
 

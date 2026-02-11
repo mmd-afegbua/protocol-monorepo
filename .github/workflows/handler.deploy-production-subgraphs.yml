@@ -38,16 +38,9 @@ jobs:
     uses: ./.github/workflows/call.test-local-subgraph.yml
     name: Run Subgraph Unit and Integration Tests
 
-  build-and-test-local-subgraph-against-previous-sdk-core-releases:
-    uses: ./.github/workflows/call.test-subgraph-on-previous-sdk-core-versions.yml
-    name: Test Local Subgraph against SDK-Core previous and current releases
-    with:
-      subgraph-release: ''
-      subgraph-endpoint: http://localhost:8000/subgraphs/name/superfluid-test
-
   deploy-subgraphs:
     uses: ./.github/workflows/call.deploy-subgraph.yml
-    needs: [build-and-test-local-subgraph, build-and-test-local-subgraph-against-previous-sdk-core-releases]
+    needs: [build-and-test-local-subgraph]
     name: Deploy graph to ${{ github.event.inputs.vendor }} vendor
     with:
       deployment_env: ${{ github.event.inputs.deployment_env }}

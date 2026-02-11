@@ -8,7 +8,7 @@ import metadata from "@superfluid-finance/metadata";
 function main() {
     const networks = JSON.stringify(
         metadata.networks
-            .filter((x) => x.subgraphV1.hostedEndpoint != null)
+            .filter((x) => x.subgraphV1?.hostedEndpoint != null)
             .map((x) => x.name)
     );
 
